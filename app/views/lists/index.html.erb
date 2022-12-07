@@ -1,0 +1,40 @@
+
+
+<div class="card_list">
+  <% @movies.each do |movie| %>
+    <div class="card" style="width: 18rem;">
+      <img src='<%= movie.poster_url %>' class="card-img-top" alt="Poster de film">
+      <div class="card-body">
+        <h5 class="card-title"><%= movie.title %></h5>
+        <p class="card-text"><%= movie.overview %></p>
+        <a href="#" class="btn btn-primary">Supprimer</a>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1429899115462-68a15cc0857d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80)">
+    Action
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFkdmVudHVyZSUyMG1vdmllc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60)">
+    Aventure
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1579833981331-676fa2bae313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YW5pbWF0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+    Animation
+  </div>
+
+   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1543584756-8f40a802e14f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29tZWR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+    Comedie
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1559782010-0d605c1ee09d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGRyYW1hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)">
+    Drame
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80)">
+    Fantasy
+  </div>
+</div>
